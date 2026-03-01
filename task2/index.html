@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .bg-image {
+        position: fixed; /* Stay put behind all content */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1; /* Sends it behind everything */
+        background: url("page.png") center center/cover no-repeat;
+        opacity: 1; /* <<<< CHANGE THIS FOR INTENSITY */
+        pointer-events: none; /* Do not block interaction */
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        opacity: 0.5;
+        /* Your normal content styling */
+      }
+    </style>
+  </head>
+  <body
+    class="content"
+    style="font-family: Consolas, monospace; margin: 0 25px"
+  >
+    <div class="bg-image"></div>
+
+    <div
+      style="
+        height: 700px;
+        padding-left: 475px;
+        padding-right: 1000px;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding-top: 70px;
+      "
+    >
+      <div style="font-size: 5em; letter-spacing: -1.5px">
+        Compare flight deals from 100s of sites.
+      </div>
+      <br />
+      <div style="display: flex">
+        <div style="background-color: red; width: 100px; height: 100px"></div>
+        <div style="background-color: green; width: 100px; height: 100px"></div>
+        <div
+          style="background-color: yellow; width: 100px; height: 100px"
+        ></div>
+        <div style="background-color: black; width: 100px; height: 100px"></div>
+      </div>
+      <div style="font-size: 3em">
+        Return <img src="assets/chevron-down.svg" alt="" />
+      </div>
+      <div style="background-color: white; height: 100px; width: 1500px"></div>
+    </div>
+  </body>
+</html>
